@@ -1,0 +1,50 @@
+title: Omezy Journal
+description: Guides on random text, voice, and video chat — how to start, stay safe, and keep a stranger conversation human. From Omezy.
+url: https://omezy.info
+baseurl: ""
+lang: en
+timezone: UTC
+future: false
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:slug/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+main_site: https://omezy.net/
+chat_url: https://omezy.net/
+safety_url: https://omezy.net/safety-tips.html
+
+google_analytics: G-W6K41T3S0F
+
+author:
+  name: Omezy Journal
+  default_writer: Omezy Journal
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      full_width: true
+      author: Omezy Journal
+      author_slug: omezy-journal
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - DEPLOY.md
+  - qa-posts.py
+  - preview.sh
+  - vendor
+  - .bundle

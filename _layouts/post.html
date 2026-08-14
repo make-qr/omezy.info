@@ -1,0 +1,67 @@
+---
+layout: default
+full_width: true
+---
+<article class="post-page" data-post-url="{{ page.url | relative_url }}" data-post-title="{{ page.title | escape }}">
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      {% if page.author %}
+      <span>By <a href="{{ '/author/' | append: page.author_slug | default: 'omezy-journal' | append: '/' | relative_url }}">{{ page.author }}</a></span>
+      {% endif %}
+      {% if page.category %}
+      <span class="sep">·</span>
+      <a href="{{ '/category/' | append: page.category_slug | append: '/' | relative_url }}">{{ page.category }}</a>
+      {% endif %}
+      {% if page.date %}
+      <span class="sep">·</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% endif %}
+      <span class="sep">·</span>
+      {% include reading-time.html %}
+    </div>
+    {% if page.excerpt %}
+    <p class="post-deck">{{ page.excerpt }}</p>
+    {% endif %}
+  </header>
+
+  {% if page.hero_image or page.image %}
+  <figure class="post-hero">
+    <img src="{% if page.hero_image contains 'http' %}{{ page.hero_image }}{% else %}{{ page.hero_image | default: page.image | relative_url }}{% endif %}" alt="{{ page.hero_alt | default: page.title }}" width="1200" height="630" loading="eager">
+    {% if page.hero_caption %}<figcaption>{{ page.hero_caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+
+  <div class="post-layout">
+    <div class="post-main">
+      <nav id="post-toc" class="post-toc-mobile" aria-label="Table of contents" hidden>
+        <strong>On this page</strong>
+        <ol id="post-toc-list"></ol>
+      </nav>
+
+      <div class="post-body prose">
+        {{ content }}
+      </div>
+
+      {% include chat-cta.html %}
+
+      <footer class="post-footer">
+        <a href="{{ '/posts/' | relative_url }}">← All posts</a>
+        <a href="{{ site.chat_url }}" class="cta-chat chat-cta-link" data-cta="chat" data-cta-placement="footer">Start chatting on Omezy</a>
+      </footer>
+    </div>
+
+    <aside class="post-sidebar">
+      <nav id="post-toc-desktop" class="post-toc" aria-label="Table of contents" hidden>
+        <strong>On this page</strong>
+        <ol id="post-toc-list-desktop"></ol>
+      </nav>
+      {% include related-posts.html %}
+      <div class="sidebar-cta">
+        <p><strong>Ready to talk?</strong></p>
+        <p class="text-muted">Free random text, voice, or video chat in your browser. 18+.</p>
+        <a class="btn chat-cta-link" href="{{ site.chat_url }}" data-cta="chat" data-cta-placement="sidebar">Try Omezy free</a>
+      </div>
+    </aside>
+  </div>
+</article>

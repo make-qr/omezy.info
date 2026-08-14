@@ -1,0 +1,20 @@
+{% assign chat_url = site.chat_url | default: 'https://omezy.net/' %}
+{% assign safety_url = site.safety_url | default: 'https://omezy.net/safety-tips.html' %}
+{% assign is_strong = false %}
+{% if page.cta_strength == 'strong' %}{% assign is_strong = true %}{% endif %}
+
+{% if is_strong %}
+<aside class="chat-cta-box chat-cta-box--strong" aria-label="Start chatting on Omezy">
+  <p class="chat-cta-kicker">Try it on Omezy</p>
+  <p class="chat-cta-lead">Free random text, voice, or video chat in your browser. Start as a guest, add interests, skip anytime. 18+.</p>
+  <p class="chat-cta-actions">
+    <a class="btn chat-cta-link" href="{{ chat_url }}" data-cta="chat" data-cta-placement="end">Start chatting</a>
+    <a class="btn btn-outline" href="{{ safety_url }}">Safety tips</a>
+  </p>
+</aside>
+{% else %}
+<aside class="chat-cta-box chat-cta-box--soft" aria-label="Try Omezy">
+  <p class="chat-cta-lead text-muted">Want a low-pressure stranger chat after this?</p>
+  <p><a class="btn btn-outline chat-cta-link" href="{{ chat_url }}" data-cta="chat" data-cta-placement="end-soft">Try Omezy free</a></p>
+</aside>
+{% endif %}

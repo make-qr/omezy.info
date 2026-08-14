@@ -1,0 +1,7 @@
+<div class="category-pills">
+  <a class="pill{% if include.active == 'all' %} active{% endif %}" href="{{ '/posts/' | relative_url }}">All</a>
+  <a class="pill{% if include.active == 'how-to-chat' %} active{% endif %}" href="{{ '/category/how-to-chat/' | relative_url }}">How-to</a>
+  <a class="pill{% if include.active == 'chat-culture' %} active{% endif %}" href="{{ '/category/chat-culture/' | relative_url }}">Culture</a>
+  <a class="pill{% if include.active == 'safety' %} active{% endif %}" href="{{ '/category/safety/' | relative_url }}">Safety</a>
+  <a class="pill{% if include.active == 'use-cases' %} active{% endif %}" href="{{ '/category/use-cases/' | relative_url }}">Use cases</a>
+</div>
