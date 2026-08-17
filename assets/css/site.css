@@ -67,21 +67,23 @@ a:hover { text-decoration: underline; }
 
 .brand:hover { text-decoration: none; opacity: 0.92; }
 
-.brand-icon {
-  width: auto;
-  height: 32px;
-  max-width: 140px;
+.journal-monogram {
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
-  border-radius: 0;
-  object-fit: contain;
-  box-shadow: none;
-  background: #fff;
-  padding: 0.2rem 0.45rem;
-  border-radius: 8px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--text);
+  color: var(--surface);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  box-shadow: 3px 3px 0 var(--accent);
 }
 
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; gap: 0.1rem; }
-.brand-text strong { font-size: 1.05rem; letter-spacing: -0.01em; }
+.brand-text strong { font-size: 1rem; letter-spacing: -0.01em; }
 .brand-text small {
   font-size: 0.72rem;
   color: var(--accent);
