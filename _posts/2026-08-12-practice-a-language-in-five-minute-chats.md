@@ -71,4 +71,4 @@ Do not stack language practice on the end of a lonely spiral and call it product
 
 A clean close in the target language is itself practice: “Thanks, I have to go. Good night.” Then close the tab.
 
-Five minutes is enough to keep a language alive. You can do that tonight as a guest on Omezy, then walk away while you still like the sound of your own trying. Fluency is a long project. This is just the part where another mammal hears you.
+Five minutes is enough to keep a language alive. You can do that tonight as a guest on Omezy, then walk away while you still like the sound of your own honest trying. Fluency is a long project. This is just the part where another mammal actually hears you speak.

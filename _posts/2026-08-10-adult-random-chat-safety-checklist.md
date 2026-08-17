@@ -75,4 +75,4 @@ After: report, disconnect, no revenge, break if your body said freeze.
 
 If you live with other people, agree on a knock or a closed-door rule so nobody walks into a stranger’s video. If you live alone, still lock the window you would not want on camera. Safety is often a house problem before it is a stranger problem.
 
-You can start a session that follows this list in a browser chat room. Pair it with the on-site safety page if you want the product-level version. The checklist is yours. The site is just the room. Bring the habits in with you, or the room will write them for you — usually too late.
+You can start a session that follows this list in a browser chat room. Pair it with a short on-site safety page if you want the product-level version as well. The checklist is yours to keep. The site is just the room. Bring the habits in with you, or the room will write them for you — usually too late.
