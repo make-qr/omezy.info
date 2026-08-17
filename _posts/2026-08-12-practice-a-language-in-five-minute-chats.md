@@ -13,7 +13,7 @@ hero_caption: "Five messy minutes with a person beats twenty perfect minutes wit
 
 Language apps will wait for you forever. A stranger will not. That is exactly why a five-minute random chat can teach you what a streak calendar cannot: how your mouth behaves when another human is actually listening. This is not a replacement for classes. It is a warm-up you can do on a weeknight without booking a tutor.
 
-Omezy is a reasonable room for this if you are 18+, honest about being a learner, and willing to skip people who want a different kind of chat. Start on [omezy.net](https://omezy.net/), add a language-related interest if you have one, and keep the session short on purpose.
+Omezy is a reasonable room for this if you are 18+, honest about being a learner, and willing to skip people who want a different kind of chat. Start in a browser chat room, add a language-related interest if you have one, and keep the session short on purpose.
 
 ## Why short chats beat a textbook hour
 
@@ -71,4 +71,4 @@ Do not stack language practice on the end of a lonely spiral and call it product
 
 A clean close in the target language is itself practice: “Thanks, I have to go. Good night.” Then close the tab.
 
-Five minutes is enough to keep a language alive. You can do that tonight as a guest on [Omezy](https://omezy.net/), then walk away while you still like the sound of your own trying. Fluency is a long project. This is just the part where another mammal hears you.
+Five minutes is enough to keep a language alive. You can do that tonight as a guest on Omezy, then walk away while you still like the sound of your own trying. Fluency is a long project. This is just the part where another mammal hears you.

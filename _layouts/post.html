@@ -47,7 +47,7 @@ full_width: true
 
       <footer class="post-footer">
         <a href="{{ '/posts/' | relative_url }}">← All posts</a>
-        <a href="{{ site.chat_url }}" class="cta-chat chat-cta-link" data-cta="chat" data-cta-placement="footer">Start chatting on Omezy</a>
+        <a href="{{ '/category/safety/' | relative_url }}" class="cta-chat">Safety guides</a>
       </footer>
     </div>
 
@@ -58,9 +58,9 @@ full_width: true
       </nav>
       {% include related-posts.html %}
       <div class="sidebar-cta">
-        <p><strong>Ready to talk?</strong></p>
-        <p class="text-muted">Free random text, voice, or video chat in your browser. 18+.</p>
-        <a class="btn chat-cta-link" href="{{ site.chat_url }}" data-cta="chat" data-cta-placement="sidebar">Try Omezy free</a>
+        <p><strong>More reading</strong></p>
+        <p class="text-muted">Practical guides on how-to, etiquette, and safety. 18+.</p>
+        <a class="btn" href="{{ '/posts/' | relative_url }}">Browse articles</a>
       </div>
     </aside>
   </div>

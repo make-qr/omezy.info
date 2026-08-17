@@ -14,9 +14,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-main_site: https://omezy.net/
-chat_url: https://omezy.net/
-safety_url: https://omezy.net/safety-tips.html
+main_site: ""
+chat_url: ""
+safety_url: "/category/safety/"
+chat_cta_enabled: false
 
 google_analytics: G-W6K41T3S0F
 

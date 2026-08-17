@@ -11,7 +11,7 @@ hero_alt: "Padlock on a laptop suggesting online safety"
 hero_caption: "Safety on random chat is a set of habits, not a feeling that the other person is nice."
 ---
 
-Safety advice for stranger chat often sounds like fear or like a legal footer. This checklist is meant to be usable while you still want to talk to someone. It is for adults. It assumes a skip button, a report button, and a product that states 18+. For Omezy’s shorter product page, see [safety tips on omezy.net](https://omezy.net/safety-tips.html). This journal version is the habit layer: before, during, after.
+Safety advice for stranger chat often sounds like fear or like a legal footer. This checklist is meant to be usable while you still want to talk to someone. It is for adults. It assumes a skip button, a report button, and a product that states 18+. For Omezy’s shorter product page, see safety tips in a browser chat room. This journal version is the habit layer: before, during, after.
 
 ## Before you click start
 
@@ -75,4 +75,4 @@ After: report, disconnect, no revenge, break if your body said freeze.
 
 If you live with other people, agree on a knock or a closed-door rule so nobody walks into a stranger’s video. If you live alone, still lock the window you would not want on camera. Safety is often a house problem before it is a stranger problem.
 
-You can start a session that follows this list on [omezy.net](https://omezy.net/). Pair it with the [on-site safety page](https://omezy.net/safety-tips.html) if you want the product-level version. The checklist is yours. The site is just the room. Bring the habits in with you, or the room will write them for you — usually too late.
+You can start a session that follows this list in a browser chat room. Pair it with the on-site safety page if you want the product-level version. The checklist is yours. The site is just the room. Bring the habits in with you, or the room will write them for you — usually too late.

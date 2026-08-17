@@ -13,7 +13,7 @@ hero_caption: "Late-night chat should be smaller than the hour, not a second job
 
 Late night has a different gravity. The same joke that would be fine at 4 p.m. can feel like a confession at 1 a.m. The same stranger can feel like a lifeboat. That is why night sessions need a smaller design, not a bigger hope. This is a guide for adults who want a low-pressure conversation after the house goes quiet — without turning random chat into the only light in the room.
 
-You can do this on [Omezy](https://omezy.net/) in text or voice if video is too much. Pair it with the [safety checklist](/adult-random-chat-safety-checklist/) if you are tired enough to bargain badly.
+You can do this on Omezy in text or voice if video is too much. Pair it with the [safety checklist](/adult-random-chat-safety-checklist/) if you are tired enough to bargain badly.
 
 ## Why nights feel heavier
 
@@ -75,4 +75,4 @@ If sleep still will not come after you close the tab, do one analog thing: wash 
 
 The queue will still exist in the morning. You will not.
 
-Low-pressure conversation is a valid use of [Omezy](https://omezy.net/). It is not a substitute for friends, sleep, or help. Used as a small, timed, skip-friendly human noise, it can make a long night less sharp. Used as a place to disappear until dawn, it will take more than it gives. Design the night. Then keep the design when you are least interested in designs.
+Low-pressure conversation is a valid use of Omezy. It is not a substitute for friends, sleep, or help. Used as a small, timed, skip-friendly human noise, it can make a long night less sharp. Used as a place to disappear until dawn, it will take more than it gives. Design the night. Then keep the design when you are least interested in designs.

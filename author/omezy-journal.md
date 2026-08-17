@@ -3,7 +3,7 @@ layout: default
 title: Omezy Journal
 permalink: /author/omezy-journal/
 full_width: true
-excerpt: Editorial team behind Omezy Journal — the official blog of omezy.net.
+excerpt: Editorial team behind Omezy Journal — an independent guide journal about random chat.
 ---
 
 <section class="archive-header">
@@ -12,8 +12,8 @@ excerpt: Editorial team behind Omezy Journal — the official blog of omezy.net.
 </section>
 
 <div class="author-card">
-  <p>Omezy Journal is the editorial name for guides published at <a href="https://omezy.info/">omezy.info</a>. The product lives at <a href="https://omezy.net/">omezy.net</a>. We do not hide that relationship: this is the brand blog, not a third-party review mill.</p>
-  <p>Articles here stay on long-form how-to, etiquette, safety habits, and use cases. Short product pages (alternatives roundups, legal, the chat app itself) stay on omezy.net.</p>
+  <p>Omezy Journal is the editorial name for guides published at <a href="https://omezy.info/">omezy.info</a>. The product lives at <a href="Omezy We do not hide that relationship: this is the brand blog, not a third-party review mill.</p>
+  <p>Articles here stay on long-form how-to, etiquette, safety habits, and use cases. This journal stays on long-form guides only.</p>
 </div>
 
 <section class="home-section">

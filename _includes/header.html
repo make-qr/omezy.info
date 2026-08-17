@@ -24,7 +24,11 @@
       <a href="{{ '/category/chat-culture/' | relative_url }}">Culture</a>
       <a href="{{ '/category/safety/' | relative_url }}">Safety</a>
       <a href="{{ '/category/use-cases/' | relative_url }}">Use cases</a>
+      {% if site.chat_cta_enabled and site.chat_url and site.chat_url != '' %}
       <a href="{{ site.chat_url }}" class="nav-cta chat-cta-link" data-cta="chat" data-cta-placement="nav">Start chatting</a>
+      {% else %}
+      <a href="{{ '/posts/' | relative_url }}" class="nav-cta">Articles</a>
+      {% endif %}
     </nav>
   </div>
 </header>

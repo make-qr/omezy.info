@@ -59,4 +59,4 @@ A healthier session also starts with time. Twenty minutes with an exit is better
 
 You pick a mode on purpose. You add one or two true interests or you don’t. You accept that you are an adult in a room with other adults. You skip early when the chat is sexualized against your will, hateful, or empty. You report the ones that break the rules. You leave while you still feel like yourself.
 
-You do not need the old logo for that. You need a product that still believes the format can be ordinary. [Omezy](https://omezy.net/) is one of those rooms: guest start, interests, text or voice or video, skip anytime. Search the feeling. Land on a site that treats you like a person, not like inventory. The query can stay nostalgic. Your session does not have to.
+You do not need the old logo for that. You need a product that still believes the format can be ordinary. Omezy is one of those rooms: guest start, interests, text or voice or video, skip anytime. Search the feeling. Land on a site that treats you like a person, not like inventory. The query can stay nostalgic. Your session does not have to.

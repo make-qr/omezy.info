@@ -13,7 +13,7 @@ hero_caption: "A human chat is two people trading small true things, not a perfe
 
 The complaint about random chat is that it feels like a vending machine: insert greeting, receive skip. Sometimes that is the room. Sometimes it is the way we show up — extracting, performing, never putting a real object on the table. This guide is about making a stranger chat feel human without pretending you are old friends. Human here means: they could tell you were a person, and you could tell they were one too, even if it only lasted seven minutes.
 
-You do not need a soulmate. You need a few true sentences. [Omezy](https://omezy.net/) will get you a match. The sentences are still your job.
+You do not need a soulmate. You need a few true sentences. Omezy will get you a match. The sentences are still your job.
 
 ## The difference between random and hollow
 
@@ -71,4 +71,4 @@ Wish them a decent night in your head and go. The next match is not a sequel. Do
 
 If you got a human seven minutes, count it. We under-count ordinary warmth because it did not become a relationship. Ordinary warmth is still the thing you came for.
 
-Making a stranger chat feel human is not a trick. It is second-layer questions, one small true share, a named pause, and respect for the exit. You can practice all four tonight on [omezy.net](https://omezy.net/) — text, voice, or video, guest start, skip anytime. Be a person. Let them be one. Leave while that is still true.
+Making a stranger chat feel human is not a trick. It is second-layer questions, one small true share, a named pause, and respect for the exit. You can practice all four tonight in a browser chat room — text, voice, or video, guest start, skip anytime. Be a person. Let them be one. Leave while that is still true.
