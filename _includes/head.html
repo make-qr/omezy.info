@@ -38,3 +38,51 @@
 </script>
 {% endif %}
 {% seo %}
+<script>
+(function () {
+  function send(hypothesisId, message, data) {
+    // #region agent log
+    fetch('http://127.0.0.1:7730/ingest/258bc43d-4dad-48ee-9f48-cf019f496a8a', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-Debug-Session-Id': '0df3a6' },
+      body: JSON.stringify({
+        sessionId: '0df3a6',
+        runId: 'post-fix',
+        hypothesisId: hypothesisId,
+        location: '_includes/head.html',
+        message: message,
+        data: data,
+        timestamp: Date.now()
+      })
+    }).catch(function () {});
+    // #endregion
+  }
+  var icons = Array.prototype.map.call(document.querySelectorAll('link[rel*="icon"]'), function (el) {
+    return { rel: el.rel, href: el.getAttribute('href') };
+  });
+  var og = document.querySelector('meta[property="og:image"]');
+  var mono = document.querySelector('.journal-monogram');
+  send('C', 'header brand + icon hrefs', {
+    icons: icons,
+    og: og ? og.getAttribute('content') : null,
+    hasMonogram: !!mono,
+    monogramText: mono ? (mono.textContent || '').trim() : null
+  });
+  function inspect(url, hid) {
+    fetch(url, { cache: 'no-store' }).then(function (r) { return r.text().then(function (t) { return { status: r.status, t: t }; }); })
+      .then(function (res) {
+        var t = res.t || '';
+        send(hid, 'asset inspect', {
+          url: url,
+          status: res.status,
+          len: t.length,
+          hasOJ: t.indexOf('>OJ<') !== -1 || t.indexOf('Omezy Journal') !== -1,
+          hasOldOmezyColors: t.indexOf('#f47b20') !== -1 || t.indexOf('#184476') !== -1,
+          hasOldZMark: t.indexOf('viewBox="0 0 333 333"') !== -1
+        });
+      }).catch(function (e) { send(hid, 'asset inspect fail', { url: url, err: String(e) }); });
+  }
+  inspect('/assets/images/favicon.svg', 'A');
+  inspect('/assets/images/logo-icon.svg', 'D');
+})();
+</script>
