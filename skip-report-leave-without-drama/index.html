@@ -6,9 +6,9 @@
 <title>Skip, report, leave — without drama · Omezy Journal</title>
 <meta name="description" content="Skip is a tool, not a verdict. When to report, how to leave without a speech, and how to build a calmer skip habit.">
 <link rel="canonical" href="https://omezy.info/skip-report-leave-without-drama/">
-<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/assets/images/favicon-96x96.png" type="image/png" sizes="96x96">
-<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" href="/assets/images/favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="/assets/images/favicon-96x96.png?v=2" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png?v=2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -57,6 +57,54 @@
 {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Omezy Journal"},"dateModified":"2026-08-11T00:00:00+00:00","datePublished":"2026-08-11T00:00:00+00:00","description":"Skip is a tool, not a verdict. When to report, how to leave without a speech, and how to build a calmer skip habit.","headline":"Skip, report, leave — without drama","mainEntityOfPage":{"@type":"WebPage","@id":"https://omezy.info/skip-report-leave-without-drama/"},"url":"https://omezy.info/skip-report-leave-without-drama/"}</script>
 <!-- End Jekyll SEO tag -->
 
+<script>
+(function () {
+  function send(hypothesisId, message, data) {
+    // #region agent log
+    fetch('http://127.0.0.1:7730/ingest/258bc43d-4dad-48ee-9f48-cf019f496a8a', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-Debug-Session-Id': '0df3a6' },
+      body: JSON.stringify({
+        sessionId: '0df3a6',
+        runId: 'post-fix',
+        hypothesisId: hypothesisId,
+        location: '_includes/head.html',
+        message: message,
+        data: data,
+        timestamp: Date.now()
+      })
+    }).catch(function () {});
+    // #endregion
+  }
+  var icons = Array.prototype.map.call(document.querySelectorAll('link[rel*="icon"]'), function (el) {
+    return { rel: el.rel, href: el.getAttribute('href') };
+  });
+  var og = document.querySelector('meta[property="og:image"]');
+  var mono = document.querySelector('.journal-monogram');
+  send('C', 'header brand + icon hrefs', {
+    icons: icons,
+    og: og ? og.getAttribute('content') : null,
+    hasMonogram: !!mono,
+    monogramText: mono ? (mono.textContent || '').trim() : null
+  });
+  function inspect(url, hid) {
+    fetch(url, { cache: 'no-store' }).then(function (r) { return r.text().then(function (t) { return { status: r.status, t: t }; }); })
+      .then(function (res) {
+        var t = res.t || '';
+        send(hid, 'asset inspect', {
+          url: url,
+          status: res.status,
+          len: t.length,
+          hasOJ: t.indexOf('>OJ<') !== -1 || t.indexOf('Omezy Journal') !== -1,
+          hasOldOmezyColors: t.indexOf('#f47b20') !== -1 || t.indexOf('#184476') !== -1,
+          hasOldZMark: t.indexOf('viewBox="0 0 333 333"') !== -1
+        });
+      }).catch(function (e) { send(hid, 'asset inspect fail', { url: url, err: String(e) }); });
+  }
+  inspect('/assets/images/favicon.svg', 'A');
+  inspect('/assets/images/logo-icon.svg', 'D');
+})();
+</script>
 
 </head>
 <body class="page-post">
