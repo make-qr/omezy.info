@@ -13,7 +13,7 @@ hero_caption: "You do not owe a stranger — or a product — an account on minu
 
 A lot of random-chat anxiety is really account anxiety. People remember sites that demanded a phone number before you could say hello, then leaked, sold, or nagged forever. Guest mode exists because that pattern trained everyone to flinch. Sign-in exists because returning users sometimes want a thread of continuity: settings, fewer repeats, a way to recover a session.
 
-This is not a lecture to create an account. It is a map of what each path is for, what you trade, and how to decide on a given night. On Omezy you can start as a guest and sign in later if you want longer chats. That order is the point.
+This is not a lecture to create an account. It is a map of what each path is for, what you trade, and how to decide on a given night. On [Omezy](https://omezy.net/) you can start as a guest and sign in later if you want longer chats. That order is the point.
 
 ## What guest mode is for
 
@@ -63,4 +63,4 @@ The intended path is guest first. You pick text, voice, or video, add interests 
 
 That split keeps the journal honest too. We are not going to tell you that an account makes random chat wholesome. We will tell you that starting without one is how you inspect the room. Then, if the room is decent, you can leave a light footprint on purpose.
 
-Decision, compressed: start guest; keep identifying details out of the chat either way; sign in only when the product has earned a password. You can do the first half tonight in a browser chat room. The second half can wait until you actually want to come back.
+Decision, compressed: start guest; keep identifying details out of the chat either way; sign in only when the product has earned a password. You can do the first half tonight at [omezy.net](https://omezy.net/). The second half can wait until you actually want to come back.

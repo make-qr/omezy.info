@@ -13,7 +13,7 @@ hero_caption: "Leaving well is a safety skill, not an insult to the last strange
 
 Skip culture has a reputation for being cold. Sometimes it is. It is also how millions of people avoided worse nights. The skill is not skipping more. The skill is skipping cleanly, reporting when it counts, and leaving the session before you turn mean. Drama is extra. Extra is how a bad match becomes a bad evening.
 
-This sits next to Omezy’s safety tips. Here the focus is the three exits: skip, report, leave the product.
+This sits next to Omezy’s [safety tips](https://omezy.net/safety-tips.html). Here the focus is the three exits: skip, report, leave the product.
 
 ## Skip is a tool not a verdict
 
@@ -73,4 +73,4 @@ Calmer skipping also means not explaining the skip to the next stranger. They di
 
 Skip counts as a complete action. You do not need a follow-up ritual besides a breath.
 
-Use Omezy as a room that expects skip and report to be normal, not as a courtroom. Start chatting, leave early when you should, report when it counts, and close the tab while you still like yourself. That is a successful night even if nobody became a friend. Friendship was never the only valid output. A clean exit is.
+Use [Omezy](https://omezy.net/) as a room that expects skip and report to be normal, not as a courtroom. Start chatting, leave early when you should, report when it counts, and close the tab while you still like yourself. That is a successful night even if nobody became a friend. Friendship was never the only valid output. A clean exit is.

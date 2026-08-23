@@ -13,7 +13,7 @@ hero_caption: "Video chat rewards a first line that is specific, short, and easy
 
 Random video chat is unforgiving in a way text chat is not. The other person can see your face, hear your room, and decide in a glance whether this match is worth another ten seconds. That is not vanity. It is how skip-heavy rooms work. If your first line is a blank stare, a grunted “hey,” or a joke that only you find funny, most adults will move on. This guide is about the first three seconds: what to say, what to skip, and how to recover when the other person answers with something thin.
 
-Omezy is built for that moment. You pick text, voice, or video, add interests if you want a better first match, and you can skip without writing a resignation letter. The product lives in a browser chat room. This article is the human side of pressing Start.
+Omezy is built for that moment. You pick text, voice, or video, add interests if you want a better first match, and you can skip without writing a resignation letter. The product lives at [omezy.net](https://omezy.net/). This article is the human side of pressing Start.
 
 ## The first three seconds
 
@@ -73,4 +73,4 @@ Second 15–25: listen. Do not plan your next joke while they talk. If they give
 
 Second 25–30: offer the pace. “I’m good with a short chat. Skip whenever. No speech required.” That sentence does more for trust than any compliment. Adults stay longer when they know they can leave.
 
-If they skip anyway, that is data, not a verdict on your face. The next match is a new first three seconds. On Omezy you can switch to text or voice if video is costing you too much tonight. The goal is not a perfect take. The goal is a first line that a tired adult can answer without bracing.
+If they skip anyway, that is data, not a verdict on your face. The next match is a new first three seconds. On [Omezy](https://omezy.net/) you can switch to text or voice if video is costing you too much tonight. The goal is not a perfect take. The goal is a first line that a tired adult can answer without bracing.

@@ -13,7 +13,7 @@ hero_caption: "The best icebreaker is a handle the other person can grab in one 
 
 Creepy is not a mystery. In random chat it usually means one of four things: you commented on their body before they commented on the weather, you asked a question that only has a trap answer, you treated silence as consent to escalate, or you used a line that has been a pickup script since 2012. Adults have seen the scripts. They skip them the way they skip ads.
 
-This is a 2026 icebreaker guide for people who want a conversation, not a conquest. It assumes 18+, a skip button, and a product like Omezy where you can match on interests instead of relying on chaos.
+This is a 2026 icebreaker guide for people who want a conversation, not a conquest. It assumes 18+, a skip button, and a product like [Omezy](https://omezy.net/) where you can match on interests instead of relying on chaos.
 
 ## Why most icebreakers fail
 
@@ -75,4 +75,4 @@ For a shared tag: “We both claimed ‘music.’ Prove it with a song you overp
 
 For a night that feels heavy: “Low pressure on my side. Small talk is allowed. Silence for a second is allowed. Escalation is not.”
 
-The last line is the one that prevents creepy. You have said the rules without sounding like a cop. Then you keep them. Icebreakers are not magic. They are a first offer. The second offer is how you behave when they answer. On Omezy you can start as a guest, add a couple of true tags, and practice these lines until they stop feeling like lines.
+The last line is the one that prevents creepy. You have said the rules without sounding like a cop. Then you keep them. Icebreakers are not magic. They are a first offer. The second offer is how you behave when they answer. On Omezy you can [start as a guest](https://omezy.net/), add a couple of true tags, and practice these lines until they stop feeling like lines.

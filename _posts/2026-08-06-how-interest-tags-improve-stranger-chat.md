@@ -13,7 +13,7 @@ hero_caption: "Shared interests give a random match a first subject that is not 
 
 The old random-chat myth was that chaos is the point. Sometimes it is. More often, chaos is just unmatched people talking past each other until someone skips. Interest tags are a mild correction: not a dating app, not a guarantee, just a better first subject than “asl.”
 
-On Omezy you can add interests before you start. Use them as fuel. This piece is how to pick tags that are true, how to combine them without boxing yourself in, and what to do when tags fail — because they will, sometimes, and that is still okay.
+On [Omezy](https://omezy.net/) you can add interests before you start. Use them as fuel. This piece is how to pick tags that are true, how to combine them without boxing yourself in, and what to do when tags fail — because they will, sometimes, and that is still okay.
 
 ## Matching is not a dating filter
 
@@ -69,4 +69,4 @@ Third mention should leave the tag if the chat has another thread. The goal is t
 
 Close tagged chats the same way you close untagged ones: cleanly. “I’m gonna go — thanks for the trail rec.” You do not owe a social media swap. If you both want to continue, that is a later decision on a later night.
 
-Interest tags will not make strangers kind. They will not make you fluent. They will give you a first sentence that is about a thing instead of a body. That is a low, decent bar, and it is why starting on Omezy with a couple of honest tags is usually a better night than starting with nothing but hope.
+Interest tags will not make strangers kind. They will not make you fluent. They will give you a first sentence that is about a thing instead of a body. That is a low, decent bar, and it is why [starting on Omezy with a couple of honest tags](https://omezy.net/) is usually a better night than starting with nothing but hope.

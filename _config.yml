@@ -1,5 +1,6 @@
 title: Omezy Journal
-description: Guides on random text, voice, and video chat — how to start, stay safe, and keep a stranger conversation human. From Omezy.
+tagline: Official guides for Omezy random chat
+description: Omezy Journal on omezy.info — how-to, safety, and culture guides for Omezy random text, voice, and video chat. Start smarter, stay safer, keep conversations human. 18+.
 url: https://omezy.info
 baseurl: ""
 lang: en
@@ -14,16 +15,20 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-main_site: ""
-chat_url: ""
-safety_url: "/category/safety/"
-chat_cta_enabled: false
+main_site: https://omezy.net/
+chat_url: https://omezy.net/
+safety_url: https://omezy.net/safety-tips.html
 
 google_analytics: G-W6K41T3S0F
 
 author:
   name: Omezy Journal
   default_writer: Omezy Journal
+
+social:
+  name: Omezy Journal
+  links:
+    - https://omezy.net/
 
 defaults:
   - scope:

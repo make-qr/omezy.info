@@ -65,4 +65,4 @@ You can start text and say, “If this is easy, I might switch to voice.” You 
 
 A clean line: “I want to keep talking but I’m camera-tired. Voice or text?” If they need video or nothing, you now know. Incompatibility is not rudeness.
 
-On Omezy the mode is a first-class choice, not a hidden upgrade. Use that. Pick the cheapest mode that still feels like a person. After two or three matches, reassess. The right mode at 9 p.m. is often the wrong mode at 1 a.m. Adults change the channel. They do not keep paying a cost they no longer have.
+On [Omezy](https://omezy.net/) the mode is a first-class choice, not a hidden upgrade. Use that. Pick the cheapest mode that still feels like a person. After two or three matches, reassess. The right mode at 9 p.m. is often the wrong mode at 1 a.m. Adults change the channel. They do not keep paying a cost they no longer have.

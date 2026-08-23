@@ -1,22 +1,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<link rel="canonical" href="{{ page.url | absolute_url }}">
-<link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}?v=2" type="image/svg+xml">
-<link rel="icon" href="{{ '/assets/images/favicon-96x96.png' | relative_url }}?v=2" type="image/png" sizes="96x96">
-<link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}?v=2">
+<link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/assets/images/favicon-96x96.png' | relative_url }}" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
-{% if page.hero_image or page.image %}
-<meta property="og:image" content="{% if page.hero_image contains 'http' %}{{ page.hero_image }}{% else %}{{ page.hero_image | default: page.image | absolute_url }}{% endif %}">
-<meta name="twitter:card" content="summary_large_image">
-{% else %}
-<meta property="og:image" content="{{ '/assets/images/apple-touch-icon.png' | absolute_url }}?v=2">
-<meta name="twitter:card" content="summary_large_image">
-{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=2">
 {% if site.google_analytics %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
@@ -38,51 +28,3 @@
 </script>
 {% endif %}
 {% seo %}
-<script>
-(function () {
-  function send(hypothesisId, message, data) {
-    // #region agent log
-    fetch('http://127.0.0.1:7730/ingest/258bc43d-4dad-48ee-9f48-cf019f496a8a', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'X-Debug-Session-Id': '0df3a6' },
-      body: JSON.stringify({
-        sessionId: '0df3a6',
-        runId: 'post-fix',
-        hypothesisId: hypothesisId,
-        location: '_includes/head.html',
-        message: message,
-        data: data,
-        timestamp: Date.now()
-      })
-    }).catch(function () {});
-    // #endregion
-  }
-  var icons = Array.prototype.map.call(document.querySelectorAll('link[rel*="icon"]'), function (el) {
-    return { rel: el.rel, href: el.getAttribute('href') };
-  });
-  var og = document.querySelector('meta[property="og:image"]');
-  var mono = document.querySelector('.journal-monogram');
-  send('C', 'header brand + icon hrefs', {
-    icons: icons,
-    og: og ? og.getAttribute('content') : null,
-    hasMonogram: !!mono,
-    monogramText: mono ? (mono.textContent || '').trim() : null
-  });
-  function inspect(url, hid) {
-    fetch(url, { cache: 'no-store' }).then(function (r) { return r.text().then(function (t) { return { status: r.status, t: t }; }); })
-      .then(function (res) {
-        var t = res.t || '';
-        send(hid, 'asset inspect', {
-          url: url,
-          status: res.status,
-          len: t.length,
-          hasOJ: t.indexOf('>OJ<') !== -1 || t.indexOf('Omezy Journal') !== -1,
-          hasOldOmezyColors: t.indexOf('#f47b20') !== -1 || t.indexOf('#184476') !== -1,
-          hasOldZMark: t.indexOf('viewBox="0 0 333 333"') !== -1
-        });
-      }).catch(function (e) { send(hid, 'asset inspect fail', { url: url, err: String(e) }); });
-  }
-  inspect('/assets/images/favicon.svg', 'A');
-  inspect('/assets/images/logo-icon.svg', 'D');
-})();
-</script>

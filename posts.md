@@ -1,15 +1,17 @@
 ---
 layout: default
-title: All articles
+title: All Omezy Journal articles
+description: >-
+  Browse every Omezy Journal guide — how-to, culture, safety, and use cases for Omezy random
+  text, voice, and video chat on omezy.info.
 permalink: /posts/
 full_width: true
 page_kind: archive
-excerpt: All Omezy Journal guides — how-to, culture, safety, and use cases for random chat.
 ---
 
 <section class="archive-header">
-  <h1>All articles</h1>
-  <p class="archive-lead">How to start, stay safe, and keep a stranger conversation human. Official blog of Omezy.</p>
+  <h1>All Omezy articles</h1>
+  <p class="archive-lead">How to start on Omezy, stay safe, and keep a stranger conversation human. Official journal of <a href="{{ site.main_site }}">omezy.net</a>.</p>
 </section>
 
 {% include category-pills.html active='all' %}
@@ -20,4 +22,7 @@ excerpt: All Omezy Journal guides — how-to, culture, safety, and use cases for
       {% include post-card.html post=post %}
     {% endfor %}
   </div>
+  {% if site.posts.size == 0 %}
+  <p class="archive-empty">No articles yet.</p>
+  {% endif %}
 </section>

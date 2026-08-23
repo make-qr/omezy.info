@@ -1,10 +1,17 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Omezy Journal home">
-      <span class="journal-monogram" aria-hidden="true">OJ</span>
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img
+        class="brand-icon"
+        src="{{ '/assets/images/omezy-brand.svg' | relative_url }}"
+        alt="Omezy"
+        width="120"
+        height="32"
+        decoding="async"
+      >
       <span class="brand-text">
-        <strong>Omezy Journal</strong>
-        <small>Independent guides</small>
+        <strong>Omezy</strong>
+        <small>Journal</small>
       </span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
@@ -17,11 +24,7 @@
       <a href="{{ '/category/chat-culture/' | relative_url }}">Culture</a>
       <a href="{{ '/category/safety/' | relative_url }}">Safety</a>
       <a href="{{ '/category/use-cases/' | relative_url }}">Use cases</a>
-      {% if site.chat_cta_enabled and site.chat_url and site.chat_url != '' %}
       <a href="{{ site.chat_url }}" class="nav-cta chat-cta-link" data-cta="chat" data-cta-placement="nav">Start chatting</a>
-      {% else %}
-      <a href="{{ '/posts/' | relative_url }}" class="nav-cta">Articles</a>
-      {% endif %}
     </nav>
   </div>
 </header>

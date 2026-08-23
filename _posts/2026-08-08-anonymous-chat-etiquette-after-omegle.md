@@ -65,4 +65,4 @@ If they are rude, skip faster. Teaching a stranger manners in a random room is a
 
 If they seem young, skip and report. Do not investigate. Do not “just check.” Leave. Adult products stay adult because users refuse the gray zone.
 
-Etiquette after the old era is mostly this: keep the room usable. Omezy can give you skip, report, and modes. You still have to bring the part that does not have a button — the decision to treat a nameless person as a person. That is the whole post, in one line, and it is the part search results never teach.
+Etiquette after the old era is mostly this: keep the room usable. [Omezy](https://omezy.net/) can give you skip, report, and modes. You still have to bring the part that does not have a button — the decision to treat a nameless person as a person. That is the whole post, in one line, and it is the part search results never teach.

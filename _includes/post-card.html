@@ -2,29 +2,32 @@
 {% if post %}
 <article class="post-card">
   {% include post-cover.html post=post %}
-  <a class="post-card-image" href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="{{ post.url | relative_url }}">
     <img src="{{ cover_src }}" alt="{{ post.hero_alt | default: post.title | escape }}" loading="lazy" width="400" height="225">
   </a>
   <div class="post-card-body">
     {% if post.category_slug == 'how-to-chat' %}
-    <span class="post-card-tag tag-advice">How-to</span>
+    <a class="post-card-tag tag-advice" href="{{ '/category/how-to-chat/' | relative_url }}">How-to</a>
     {% elsif post.category_slug == 'chat-culture' %}
-    <span class="post-card-tag tag-essay">Culture</span>
+    <a class="post-card-tag tag-essay" href="{{ '/category/chat-culture/' | relative_url }}">Culture</a>
     {% elsif post.category_slug == 'safety' %}
-    <span class="post-card-tag tag-guide">Safety</span>
+    <a class="post-card-tag tag-guide" href="{{ '/category/safety/' | relative_url }}">Safety</a>
     {% elsif post.category_slug == 'use-cases' %}
-    <span class="post-card-tag tag-romance">Use cases</span>
+    <a class="post-card-tag tag-romance" href="{{ '/category/use-cases/' | relative_url }}">Use cases</a>
     {% elsif post.category %}
     <span class="post-card-tag tag-essay">{{ post.category }}</span>
     {% endif %}
     <h3 class="post-card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     {% if post.excerpt %}
-    <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+    <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
     {% endif %}
-    <div class="post-card-meta">
-      {% if post.date %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>{% endif %}
-      <span class="sep">·</span>
-      {% include reading-time.html content=post.content %}
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        {% if post.date %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>{% endif %}
+        <span class="sep">·</span>
+        {% include reading-time.html content=post.content %}
+      </div>
+      <a class="post-card-read" href="{{ post.url | relative_url }}">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
