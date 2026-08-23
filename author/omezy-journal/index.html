@@ -3,20 +3,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Omezy Journal · Omezy Journal</title>
-<meta name="description" content="Editorial team behind Omezy Journal — an independent guide journal about random chat.">
-<link rel="canonical" href="https://omezy.info/author/omezy-journal/">
-<link rel="icon" href="/assets/images/favicon.svg?v=2" type="image/svg+xml">
-<link rel="icon" href="/assets/images/favicon-96x96.png?v=2" type="image/png" sizes="96x96">
-<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png?v=2">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/images/favicon-96x96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css">
-
-<meta property="og:image" content="https://omezy.info/assets/images/apple-touch-icon.png?v=2">
-<meta name="twitter:card" content="summary_large_image">
-
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6K41T3S0F"></script>
 <script>
@@ -38,13 +31,13 @@
 </script>
 
 <!-- Begin Jekyll SEO tag v2.9.0 -->
-<title>Omezy Journal | Guides on random text, voice, and video chat — how to start, stay safe, and keep a stranger conversation human. From Omezy.</title>
+<title>Omezy Journal | Official guides for Omezy random chat</title>
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Omezy Journal" />
 <meta name="author" content="Omezy Journal" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Editorial team behind Omezy Journal — an independent guide journal about random chat." />
-<meta name="twitter:description" property="og:description" content="Editorial team behind Omezy Journal — an independent guide journal about random chat." />
+<meta name="description" content="Editorial team behind Omezy Journal — the official blog of omezy.net." />
+<meta name="twitter:description" property="og:description" content="Editorial team behind Omezy Journal — the official blog of omezy.net." />
 <link rel="canonical" href="https://omezy.info/author/omezy-journal/" />
 <meta property="og:url" content="https://omezy.info/author/omezy-journal/" />
 <meta property="og:site_name" content="Omezy Journal" />
@@ -52,67 +45,26 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Omezy Journal" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Omezy Journal"},"description":"Editorial team behind Omezy Journal — an independent guide journal about random chat.","headline":"Omezy Journal","url":"https://omezy.info/author/omezy-journal/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Omezy Journal"},"description":"Editorial team behind Omezy Journal — the official blog of omezy.net.","headline":"Omezy Journal","url":"https://omezy.info/author/omezy-journal/"}</script>
 <!-- End Jekyll SEO tag -->
 
-<script>
-(function () {
-  function send(hypothesisId, message, data) {
-    // #region agent log
-    fetch('http://127.0.0.1:7730/ingest/258bc43d-4dad-48ee-9f48-cf019f496a8a', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'X-Debug-Session-Id': '0df3a6' },
-      body: JSON.stringify({
-        sessionId: '0df3a6',
-        runId: 'post-fix',
-        hypothesisId: hypothesisId,
-        location: '_includes/head.html',
-        message: message,
-        data: data,
-        timestamp: Date.now()
-      })
-    }).catch(function () {});
-    // #endregion
-  }
-  var icons = Array.prototype.map.call(document.querySelectorAll('link[rel*="icon"]'), function (el) {
-    return { rel: el.rel, href: el.getAttribute('href') };
-  });
-  var og = document.querySelector('meta[property="og:image"]');
-  var mono = document.querySelector('.journal-monogram');
-  send('C', 'header brand + icon hrefs', {
-    icons: icons,
-    og: og ? og.getAttribute('content') : null,
-    hasMonogram: !!mono,
-    monogramText: mono ? (mono.textContent || '').trim() : null
-  });
-  function inspect(url, hid) {
-    fetch(url, { cache: 'no-store' }).then(function (r) { return r.text().then(function (t) { return { status: r.status, t: t }; }); })
-      .then(function (res) {
-        var t = res.t || '';
-        send(hid, 'asset inspect', {
-          url: url,
-          status: res.status,
-          len: t.length,
-          hasOJ: t.indexOf('>OJ<') !== -1 || t.indexOf('Omezy Journal') !== -1,
-          hasOldOmezyColors: t.indexOf('#f47b20') !== -1 || t.indexOf('#184476') !== -1,
-          hasOldZMark: t.indexOf('viewBox="0 0 333 333"') !== -1
-        });
-      }).catch(function (e) { send(hid, 'asset inspect fail', { url: url, err: String(e) }); });
-  }
-  inspect('/assets/images/favicon.svg', 'A');
-  inspect('/assets/images/logo-icon.svg', 'D');
-})();
-</script>
 
 </head>
 <body class="page-default">
   <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/" aria-label="Omezy Journal home">
-      <span class="journal-monogram" aria-hidden="true">OJ</span>
+    <a class="brand" href="/">
+      <img
+        class="brand-icon"
+        src="/assets/images/omezy-brand.svg"
+        alt="Omezy"
+        width="120"
+        height="32"
+        decoding="async"
+      >
       <span class="brand-text">
-        <strong>Omezy Journal</strong>
-        <small>Independent guides</small>
+        <strong>Omezy</strong>
+        <small>Journal</small>
       </span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
@@ -125,9 +77,7 @@
       <a href="/category/chat-culture/">Culture</a>
       <a href="/category/safety/">Safety</a>
       <a href="/category/use-cases/">Use cases</a>
-      
-      <a href="/posts/" class="nav-cta">Articles</a>
-      
+      <a href="https://omezy.net/" class="nav-cta chat-cta-link" data-cta="chat" data-cta-placement="nav">Start chatting</a>
     </nav>
   </div>
 </header>
@@ -140,8 +90,8 @@
 </section>
 
 <div class="author-card">
-  <p>Omezy Journal is the editorial name for guides published at <a href="https://omezy.info/">omezy.info</a>. The product lives at &lt;a href="Omezy We do not hide that relationship: this is the brand blog, not a third-party review mill.</p>
-  <p>Articles here stay on long-form how-to, etiquette, safety habits, and use cases. This journal stays on long-form guides only.</p>
+  <p>Omezy Journal is the editorial name for guides published at <a href="https://omezy.info/">omezy.info</a>. The product lives at <a href="https://omezy.net/">omezy.net</a>. We do not hide that relationship: this is the brand blog, not a third-party review mill.</p>
+  <p>Articles here stay on long-form how-to, etiquette, safety habits, and use cases. Short product pages (alternatives roundups, legal, the chat app itself) stay on omezy.net.</p>
 </div>
 
 <section class="home-section">
@@ -155,25 +105,28 @@
 
 
 
-  <a class="post-card-image" href="/making-a-stranger-chat-feel-human/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/making-a-stranger-chat-feel-human/">
     <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="People talking together in a bright workspace" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-romance">Use cases</span>
+    <a class="post-card-tag tag-romance" href="/category/use-cases/">Use cases</a>
     
     <h3 class="post-card-title"><a href="/making-a-stranger-chat-feel-human/">Making a stranger chat feel human</a></h3>
     
-    <p class="post-card-excerpt">Random does not have to mean hollow. Second-layer questions, small shares, and how to recover a dead pause without turning the chat into ...</p>
+    <p class="post-card-excerpt">Random does not have to mean hollow. Second-layer questions, small shares, and how to recover a dead pause without turning the chat into a performa...</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-14T00:00:00+00:00">Aug 14, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-14T00:00:00+00:00">Aug 14, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">4 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/making-a-stranger-chat-feel-human/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -187,25 +140,28 @@
 
 
 
-  <a class="post-card-image" href="/late-night-low-pressure-conversation/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/late-night-low-pressure-conversation/">
     <img src="https://images.unsplash.com/photo-1511295742362-92c96b5adb10?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="City lights at night seen from a window" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-romance">Use cases</span>
+    <a class="post-card-tag tag-romance" href="/category/use-cases/">Use cases</a>
     
     <h3 class="post-card-title"><a href="/late-night-low-pressure-conversation/">Late-night, low-pressure conversation</a></h3>
     
     <p class="post-card-excerpt">Nights feel heavier. Pick a quieter mode, keep topics small, and close the laptop on purpose before the room writes the ending.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-13T00:00:00+00:00">Aug 13, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-13T00:00:00+00:00">Aug 13, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">4 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/late-night-low-pressure-conversation/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -219,25 +175,28 @@
 
 
 
-  <a class="post-card-image" href="/practice-a-language-in-five-minute-chats/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/practice-a-language-in-five-minute-chats/">
     <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Language learning books and notes on a desk" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-romance">Use cases</span>
+    <a class="post-card-tag tag-romance" href="/category/use-cases/">Use cases</a>
     
     <h3 class="post-card-title"><a href="/practice-a-language-in-five-minute-chats/">Practice a language in five-minute chats</a></h3>
     
     <p class="post-card-excerpt">Short stranger chats beat a textbook hour when you set a tiny goal, keep the scripts messy, and stop before shame shows up.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-12T00:00:00+00:00">Aug 12, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-12T00:00:00+00:00">Aug 12, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">4 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/practice-a-language-in-five-minute-chats/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -251,25 +210,28 @@
 
 
 
-  <a class="post-card-image" href="/skip-report-leave-without-drama/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/skip-report-leave-without-drama/">
     <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="People working on laptops in a cafe" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-guide">Safety</span>
+    <a class="post-card-tag tag-guide" href="/category/safety/">Safety</a>
     
     <h3 class="post-card-title"><a href="/skip-report-leave-without-drama/">Skip, report, leave — without drama</a></h3>
     
     <p class="post-card-excerpt">Skip is a tool, not a verdict. When to report, how to leave without a speech, and how to build a calmer skip habit.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-11T00:00:00+00:00">Aug 11, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-11T00:00:00+00:00">Aug 11, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">4 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/skip-report-leave-without-drama/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -283,25 +245,28 @@
 
 
 
-  <a class="post-card-image" href="/adult-random-chat-safety-checklist/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/adult-random-chat-safety-checklist/">
     <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Padlock on a laptop suggesting online safety" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-guide">Safety</span>
+    <a class="post-card-tag tag-guide" href="/category/safety/">Safety</a>
     
     <h3 class="post-card-title"><a href="/adult-random-chat-safety-checklist/">Adult random-chat safety checklist</a></h3>
     
     <p class="post-card-excerpt">Before you click start, while you are in the chat, and after a bad match — a checklist you can keep in your head.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-10T00:00:00+00:00">Aug 10, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-10T00:00:00+00:00">Aug 10, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">4 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/adult-random-chat-safety-checklist/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -315,25 +280,28 @@
 
 
 
-  <a class="post-card-image" href="/guest-mode-vs-sign-in-random-chat/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/guest-mode-vs-sign-in-random-chat/">
     <img src="https://images.unsplash.com/photo-1633265486064-086b26d9f4f1?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Keys on a table suggesting access and accounts" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-essay">Culture</span>
+    <a class="post-card-tag tag-essay" href="/category/chat-culture/">Culture</a>
     
     <h3 class="post-card-title"><a href="/guest-mode-vs-sign-in-random-chat/">Guest mode vs sign-in on random chat</a></h3>
     
     <p class="post-card-excerpt">Guest is for starting. Sign-in is for returning. Privacy tradeoffs in plain language, plus a practical decision rule.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-09T00:00:00+00:00">Aug 09, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-09T00:00:00+00:00">Aug 09, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">4 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/guest-mode-vs-sign-in-random-chat/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -347,25 +315,28 @@
 
 
 
-  <a class="post-card-image" href="/anonymous-chat-etiquette-after-omegle/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/anonymous-chat-etiquette-after-omegle/">
     <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Adult at a laptop in a bright room" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-essay">Culture</span>
+    <a class="post-card-tag tag-essay" href="/category/chat-culture/">Culture</a>
     
     <h3 class="post-card-title"><a href="/anonymous-chat-etiquette-after-omegle/">Anonymous chat etiquette after Omegle</a></h3>
     
     <p class="post-card-excerpt">Anonymity is not a free pass. Consent, camera manners, and ending a chat well in a skip-heavy room.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-08T00:00:00+00:00">Aug 08, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-08T00:00:00+00:00">Aug 08, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">4 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/anonymous-chat-etiquette-after-omegle/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -379,25 +350,28 @@
 
 
 
-  <a class="post-card-image" href="/why-people-still-search-omegle-in-2026/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/why-people-still-search-omegle-in-2026/">
     <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="People working on laptops in a shared space" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-essay">Culture</span>
+    <a class="post-card-tag tag-essay" href="/category/chat-culture/">Culture</a>
     
     <h3 class="post-card-title"><a href="/why-people-still-search-omegle-in-2026/">Why people still search Omegle in 2026</a></h3>
     
     <p class="post-card-excerpt">The search is about a feeling, not a logo. What shut down, what did not, and how to look for a replacement without getting scammed.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-07T00:00:00+00:00">Aug 07, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-07T00:00:00+00:00">Aug 07, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">5 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/why-people-still-search-omegle-in-2026/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -411,25 +385,28 @@
 
 
 
-  <a class="post-card-image" href="/how-interest-tags-improve-stranger-chat/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/how-interest-tags-improve-stranger-chat/">
     <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Small group collaborating around a table" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-advice">How-to</span>
+    <a class="post-card-tag tag-advice" href="/category/how-to-chat/">How-to</a>
     
     <h3 class="post-card-title"><a href="/how-interest-tags-improve-stranger-chat/">How interest tags improve stranger chat</a></h3>
     
     <p class="post-card-excerpt">Matching is not a dating filter. Tags are conversation fuel — if you pick ones you can actually talk about.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-06T00:00:00+00:00">Aug 06, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-06T00:00:00+00:00">Aug 06, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">5 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/how-interest-tags-improve-stranger-chat/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -443,25 +420,28 @@
 
 
 
-  <a class="post-card-image" href="/icebreakers-that-dont-feel-creepy-2026/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/icebreakers-that-dont-feel-creepy-2026/">
     <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Friends talking and laughing together" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-advice">How-to</span>
+    <a class="post-card-tag tag-advice" href="/category/how-to-chat/">How-to</a>
     
     <h3 class="post-card-title"><a href="/icebreakers-that-dont-feel-creepy-2026/">Icebreakers that don’t feel creepy (2026)</a></h3>
     
     <p class="post-card-excerpt">Most icebreakers fail because they rate, quiz, or demand. Here is a small library of lines that sound like a person.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-05T00:00:00+00:00">Aug 05, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-05T00:00:00+00:00">Aug 05, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">5 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/icebreakers-that-dont-feel-creepy-2026/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -475,25 +455,28 @@
 
 
 
-  <a class="post-card-image" href="/text-vs-voice-vs-video-which-to-pick/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/text-vs-voice-vs-video-which-to-pick/">
     <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Microphone on a desk for voice chat" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-advice">How-to</span>
+    <a class="post-card-tag tag-advice" href="/category/how-to-chat/">How-to</a>
     
     <h3 class="post-card-title"><a href="/text-vs-voice-vs-video-which-to-pick/">Text vs voice vs video — which to pick</a></h3>
     
     <p class="post-card-excerpt">Each mode costs a different kind of attention. A practical way to choose text, voice, or video before you click Start.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-04T00:00:00+00:00">Aug 04, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-04T00:00:00+00:00">Aug 04, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">5 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/text-vs-voice-vs-video-which-to-pick/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -507,25 +490,28 @@
 
 
 
-  <a class="post-card-image" href="/what-to-say-first-on-random-video-chat/" aria-hidden="true" tabindex="-1">
+  <a class="post-card-image" href="/what-to-say-first-on-random-video-chat/">
     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Person on a laptop during a video conversation" loading="lazy" width="400" height="225" />
   </a>
   <div class="post-card-body">
     
-    <span class="post-card-tag tag-advice">How-to</span>
+    <a class="post-card-tag tag-advice" href="/category/how-to-chat/">How-to</a>
     
     <h3 class="post-card-title"><a href="/what-to-say-first-on-random-video-chat/">What to say first on random video chat</a></h3>
     
     <p class="post-card-excerpt">The first three seconds decide whether someone stays. A practical opener library for adult video chat that does not sound like a script.</p>
     
-    <div class="post-card-meta">
-      <time datetime="2026-08-03T00:00:00+00:00">Aug 03, 2026</time>
-      <span class="sep">·</span>
-      
+    <div class="post-card-footer">
+      <div class="post-card-meta">
+        <time datetime="2026-08-03T00:00:00+00:00">Aug 03, 2026</time>
+        <span class="sep">·</span>
+        
 
 
 <span class="reading-time">6 min read</span>
 
+      </div>
+      <a class="post-card-read" href="/what-to-say-first-on-random-video-chat/">Read<span aria-hidden="true"> →</span></a>
     </div>
   </div>
 </article>
@@ -542,7 +528,7 @@
     <div class="footer-grid">
       <div>
         <strong>Omezy Journal</strong>
-        <p>Guides for random text, voice, and video chat. 18+ only.</p>
+        <p>The official blog of Omezy — guides for random text, voice, and video chat. 18+ only.</p>
       </div>
       <div>
         <strong>Explore</strong>
@@ -553,15 +539,15 @@
         </div>
       </div>
       <div>
-        <strong>Journal</strong>
+        <strong>Omezy</strong>
         <div class="footer-links">
-          <a href="/">Home</a>
-          <a href="/category/chat-culture/">Culture</a>
-          <a href="/category/use-cases/">Use cases</a>
+          <a href="https://omezy.net/">omezy.net</a>
+          <a href="https://omezy.net/" class="chat-cta-link" data-cta="chat" data-cta-placement="footer-col">Start chatting</a>
+          <a href="https://omezy.net/safety-tips.html">Safety tips</a>
         </div>
       </div>
     </div>
-    <p class="footer-copy">&copy; 2026 Omezy Journal. Not affiliated with Omegle.com LLC.</p>
+    <p class="footer-copy">&copy; 2026 Omezy. Omezy Journal is the official blog of <a href="https://omezy.net/">omezy.net</a>. Not affiliated with Omegle.com LLC. Free chat at omezy.net.</p>
   </div>
 </footer>
 <script src="/assets/js/site.js" defer></script>

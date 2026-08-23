@@ -3,20 +3,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Making a stranger chat feel human · Omezy Journal</title>
-<meta name="description" content="Random does not have to mean hollow. Second-layer questions, small shares, and how to recover a dead pause without turning the chat into a performance.">
-<link rel="canonical" href="https://omezy.info/making-a-stranger-chat-feel-human/">
-<link rel="icon" href="/assets/images/favicon.svg?v=2" type="image/svg+xml">
-<link rel="icon" href="/assets/images/favicon-96x96.png?v=2" type="image/png" sizes="96x96">
-<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png?v=2">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/images/favicon-96x96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css">
-
-<meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80">
-<meta name="twitter:card" content="summary_large_image">
-
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6K41T3S0F"></script>
 <script>
@@ -57,64 +50,23 @@
 {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Omezy Journal"},"dateModified":"2026-08-14T00:00:00+00:00","datePublished":"2026-08-14T00:00:00+00:00","description":"Random does not have to mean hollow. Second-layer questions, small shares, and how to recover a dead pause without turning the chat into a performance.","headline":"Making a stranger chat feel human","mainEntityOfPage":{"@type":"WebPage","@id":"https://omezy.info/making-a-stranger-chat-feel-human/"},"url":"https://omezy.info/making-a-stranger-chat-feel-human/"}</script>
 <!-- End Jekyll SEO tag -->
 
-<script>
-(function () {
-  function send(hypothesisId, message, data) {
-    // #region agent log
-    fetch('http://127.0.0.1:7730/ingest/258bc43d-4dad-48ee-9f48-cf019f496a8a', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'X-Debug-Session-Id': '0df3a6' },
-      body: JSON.stringify({
-        sessionId: '0df3a6',
-        runId: 'post-fix',
-        hypothesisId: hypothesisId,
-        location: '_includes/head.html',
-        message: message,
-        data: data,
-        timestamp: Date.now()
-      })
-    }).catch(function () {});
-    // #endregion
-  }
-  var icons = Array.prototype.map.call(document.querySelectorAll('link[rel*="icon"]'), function (el) {
-    return { rel: el.rel, href: el.getAttribute('href') };
-  });
-  var og = document.querySelector('meta[property="og:image"]');
-  var mono = document.querySelector('.journal-monogram');
-  send('C', 'header brand + icon hrefs', {
-    icons: icons,
-    og: og ? og.getAttribute('content') : null,
-    hasMonogram: !!mono,
-    monogramText: mono ? (mono.textContent || '').trim() : null
-  });
-  function inspect(url, hid) {
-    fetch(url, { cache: 'no-store' }).then(function (r) { return r.text().then(function (t) { return { status: r.status, t: t }; }); })
-      .then(function (res) {
-        var t = res.t || '';
-        send(hid, 'asset inspect', {
-          url: url,
-          status: res.status,
-          len: t.length,
-          hasOJ: t.indexOf('>OJ<') !== -1 || t.indexOf('Omezy Journal') !== -1,
-          hasOldOmezyColors: t.indexOf('#f47b20') !== -1 || t.indexOf('#184476') !== -1,
-          hasOldZMark: t.indexOf('viewBox="0 0 333 333"') !== -1
-        });
-      }).catch(function (e) { send(hid, 'asset inspect fail', { url: url, err: String(e) }); });
-  }
-  inspect('/assets/images/favicon.svg', 'A');
-  inspect('/assets/images/logo-icon.svg', 'D');
-})();
-</script>
 
 </head>
 <body class="page-post">
   <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/" aria-label="Omezy Journal home">
-      <span class="journal-monogram" aria-hidden="true">OJ</span>
+    <a class="brand" href="/">
+      <img
+        class="brand-icon"
+        src="/assets/images/omezy-brand.svg"
+        alt="Omezy"
+        width="120"
+        height="32"
+        decoding="async"
+      >
       <span class="brand-text">
-        <strong>Omezy Journal</strong>
-        <small>Independent guides</small>
+        <strong>Omezy</strong>
+        <small>Journal</small>
       </span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
@@ -127,9 +79,7 @@
       <a href="/category/chat-culture/">Culture</a>
       <a href="/category/safety/">Safety</a>
       <a href="/category/use-cases/">Use cases</a>
-      
-      <a href="/posts/" class="nav-cta">Articles</a>
-      
+      <a href="https://omezy.net/" class="nav-cta chat-cta-link" data-cta="chat" data-cta-placement="nav">Start chatting</a>
     </nav>
   </div>
 </header>
@@ -180,7 +130,7 @@
       <div class="post-body prose">
         <p>The complaint about random chat is that it feels like a vending machine: insert greeting, receive skip. Sometimes that is the room. Sometimes it is the way we show up — extracting, performing, never putting a real object on the table. This guide is about making a stranger chat feel human without pretending you are old friends. Human here means: they could tell you were a person, and you could tell they were one too, even if it only lasted seven minutes.</p>
 
-<p>You do not need a soulmate. You need a few true sentences. Omezy will get you a match. The sentences are still your job.</p>
+<p>You do not need a soulmate. You need a few true sentences. <a href="https://omezy.net/">Omezy</a> will get you a match. The sentences are still your job.</p>
 
 <h2 id="the-difference-between-random-and-hollow">The difference between random and hollow</h2>
 
@@ -238,22 +188,30 @@
 
 <p>If you got a human seven minutes, count it. We under-count ordinary warmth because it did not become a relationship. Ordinary warmth is still the thing you came for.</p>
 
-<p>Making a stranger chat feel human is not a trick. It is second-layer questions, one small true share, a named pause, and respect for the exit. You can practice all four tonight in a browser chat room — text, voice, or video, guest start, skip anytime. Be a person. Let them be one. Leave while that is still true.</p>
+<p>Making a stranger chat feel human is not a trick. It is second-layer questions, one small true share, a named pause, and respect for the exit. You can practice all four tonight on <a href="https://omezy.net/">omezy.net</a> — text, voice, or video, guest start, skip anytime. Be a person. Let them be one. Leave while that is still true.</p>
 
       </div>
 
       
-<aside class="chat-cta-box chat-cta-box--soft" aria-label="More guides">
-  <p class="chat-cta-lead text-muted">Want more practical chat advice?</p>
-  <p><a class="btn btn-outline" href="/category/safety/">Safety guides</a>
-     <a class="btn btn-outline" href="/posts/">All articles</a></p>
+
+
+
+
+
+<aside class="chat-cta-box chat-cta-box--strong" aria-label="Start chatting on Omezy">
+  <p class="chat-cta-kicker">Try it on Omezy</p>
+  <p class="chat-cta-lead">Free random text, voice, or video chat in your browser. Start as a guest, add interests, skip anytime. 18+.</p>
+  <p class="chat-cta-actions">
+    <a class="btn chat-cta-link" href="https://omezy.net/" data-cta="chat" data-cta-placement="end">Start chatting</a>
+    <a class="btn btn-outline" href="https://omezy.net/safety-tips.html">Safety tips</a>
+  </p>
 </aside>
 
 
 
       <footer class="post-footer">
         <a href="/posts/">← All posts</a>
-        <a href="/category/safety/" class="cta-chat">Safety guides</a>
+        <a href="https://omezy.net/" class="cta-chat chat-cta-link" data-cta="chat" data-cta-placement="footer">Start chatting on Omezy</a>
       </footer>
     </div>
 
@@ -365,9 +323,9 @@
 </aside>
 
       <div class="sidebar-cta">
-        <p><strong>More reading</strong></p>
-        <p class="text-muted">Practical guides on how-to, etiquette, and safety. 18+.</p>
-        <a class="btn" href="/posts/">Browse articles</a>
+        <p><strong>Ready to talk?</strong></p>
+        <p class="text-muted">Free random text, voice, or video chat in your browser. 18+.</p>
+        <a class="btn chat-cta-link" href="https://omezy.net/" data-cta="chat" data-cta-placement="sidebar">Try Omezy free</a>
       </div>
     </aside>
   </div>
@@ -380,7 +338,7 @@
     <div class="footer-grid">
       <div>
         <strong>Omezy Journal</strong>
-        <p>Guides for random text, voice, and video chat. 18+ only.</p>
+        <p>The official blog of Omezy — guides for random text, voice, and video chat. 18+ only.</p>
       </div>
       <div>
         <strong>Explore</strong>
@@ -391,15 +349,15 @@
         </div>
       </div>
       <div>
-        <strong>Journal</strong>
+        <strong>Omezy</strong>
         <div class="footer-links">
-          <a href="/">Home</a>
-          <a href="/category/chat-culture/">Culture</a>
-          <a href="/category/use-cases/">Use cases</a>
+          <a href="https://omezy.net/">omezy.net</a>
+          <a href="https://omezy.net/" class="chat-cta-link" data-cta="chat" data-cta-placement="footer-col">Start chatting</a>
+          <a href="https://omezy.net/safety-tips.html">Safety tips</a>
         </div>
       </div>
     </div>
-    <p class="footer-copy">&copy; 2026 Omezy Journal. Not affiliated with Omegle.com LLC.</p>
+    <p class="footer-copy">&copy; 2026 Omezy. Omezy Journal is the official blog of <a href="https://omezy.net/">omezy.net</a>. Not affiliated with Omegle.com LLC. Free chat at omezy.net.</p>
   </div>
 </footer>
 <script src="/assets/js/site.js" defer></script>
