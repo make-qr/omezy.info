@@ -36,4 +36,4 @@ Alternatively: CNAME flattening `@` → `make-qr.github.io`.
 ## 5. Search Console (anh)
 
 Add property `https://omezy.info/` → submit `https://omezy.info/sitemap.xml`.  
-GA4 is `G-W6K41T3S0F` (same as omezy.net — filter hostname).
+GA4 is `G-PXD8HD0HK6`.
